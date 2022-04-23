@@ -19,8 +19,10 @@ import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-b
 import {GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule} from "@abacritt/angularx-social-login";
 import { GameComponent } from './components/game/game.component';
 import { LoginComponent } from './components/login/login.component';
+import { FooterInfoComponent } from './components/footer-info/footer-info.component';
+import { FooterMenuComponent } from './components/footer-menu/footer-menu.component';
+import { RealTreesComponent } from './components/real-trees/real-trees.component';
 import {LoginButtonComponent} from "./components/login-button/login-button.component";
-import {RealTreesComponent} from "./components/real-trees/real-trees.component";
 
 @NgModule({
   declarations: [
@@ -39,9 +41,11 @@ import {RealTreesComponent} from "./components/real-trees/real-trees.component";
     ShoppingComponent,
     ShoppingMultiplierComponent,
     GameComponent,
-    RealTreesComponent,
+    LoginButtonComponent,
     LoginComponent,
-    LoginButtonComponent
+    FooterInfoComponent,
+    FooterMenuComponent,
+    RealTreesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+:host {
+  display: block;
+}
+div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+section.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 120px;
+  height: 120px;
+
+  background-color: #00A684;
+  border-radius: 50%;
+  box-shadow: 5px 5px 0 #008267;
+}
+
+section.power-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  margin-top: auto;
+
+  width: 60px;
+  height: 60px;
+
+  background-color: #ABFF00;
+  border-radius: 40%;
+  box-shadow: 5px 5px 0 #8DD200;
+}
