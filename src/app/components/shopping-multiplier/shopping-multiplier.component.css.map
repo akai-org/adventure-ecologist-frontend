@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,KAAK;CACf",
+    "sources": [
+        "shopping-multiplier.component.scss"
+    ],
+    "names": [],
+    "file": "shopping-multiplier.component.css"
+}

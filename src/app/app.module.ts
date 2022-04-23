@@ -18,6 +18,9 @@ import { ShoppingMultiplierComponent } from './components/shopping-multiplier/sh
 import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-balance.component";
 import { GameComponent } from './components/game/game.component';
 import { LoginComponent } from './components/login/login.component';
+import { FooterInfoComponent } from './components/footer-info/footer-info.component';
+import { FooterMenuComponent } from './components/footer-menu/footer-menu.component';
+import { RealTreesComponent } from './components/real-trees/real-trees.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { LoginComponent } from './components/login/login.component';
     ShoppingComponent,
     ShoppingMultiplierComponent,
     GameComponent,
-    LoginComponent
+    LoginComponent,
+    FooterInfoComponent,
+    FooterMenuComponent,
+    RealTreesComponent
   ],
   imports: [
     BrowserModule,
