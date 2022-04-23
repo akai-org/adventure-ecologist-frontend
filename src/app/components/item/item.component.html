@@ -1,1 +1,45 @@
-<p>item works!</p>
+<div class="icon">
+  <img [src]="item.thumbnail" alt="item.name">
+  <div class="quantity">
+    {{ item.quantity }}
+  </div>
+</div>
+<div class="panel">
+  <div class="description">
+    <strong>{{ item.name }}</strong> - {{ item.description }}
+  </div>
+  <div class="background">
+    <div class="info">
+      <div class="carbon-reduction">
+        <div class="title">
+          Carbon redution
+        </div>
+        <div>
+          <span class="bold">{{item.co2Reduction}}</span> of CO2
+        </div>
+        <div class="bold">X%</div>
+        of total carbon footprint
+      </div>
+      <div class="income">
+        <div class="title">
+          Income
+        </div>
+        <div>
+          <span class="bold">$ {{ (item.incomePerSecond * item.quantity).toFixed(2) }} /sec</span>
+        </div>
+        <div class="bold second">$ {{ item.incomePerSecond.toFixed(2) }} per one</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="buy-btn" (click)="buyItem()">
+  <div class="cost">
+    $ {{item.costFunction(item.quantity).toFixed(1)}}
+  </div>
+  <div class="buy">
+    Buy
+  </div>
+  <div class="multiplier">
+    x100
+  </div>
+</div>
