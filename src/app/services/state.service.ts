@@ -21,7 +21,7 @@ export class StateService {
   public set totalCO2EmissionReduction(totalCO2EmissionReduction) { this._totalCO2EmissionReduction$.next(totalCO2EmissionReduction) }
 
   constructor(private itemService: ItemService, private multiplierService: MultiplierService) {
-    itemService.items$.subscribe(this.calculateStageParameters)
+    itemService.items$.subscribe((items) => this.calculateStageParameters(items))
   }
 
   calculateStageParameters(items: Item[]) {
