@@ -13,9 +13,9 @@ import { NavbarTitleComponent } from './components/navbar-title/navbar-title.com
 import { NavbarMenuComponent } from './components/navbar-menu/navbar-menu.component';
 import { NavbarMenuItemComponent } from './components/navbar-menu-item/navbar-menu-item.component';
 import { ProgressComponent } from './components/progress/progress.component';
-import { ShoppingSaldoComponent } from './components/shopping-saldo/shopping-saldo.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { ShoppingMultiplierComponent } from './components/shopping-multiplier/shopping-multiplier.component';
+import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-balance.component";
 
 @NgModule({
   declarations: [
@@ -30,7 +30,7 @@ import { ShoppingMultiplierComponent } from './components/shopping-multiplier/sh
     NavbarMenuComponent,
     NavbarMenuItemComponent,
     ProgressComponent,
-    ShoppingSaldoComponent,
+    ShoppingBalanceComponent,
     ShoppingComponent,
     ShoppingMultiplierComponent
   ],

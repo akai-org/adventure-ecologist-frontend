@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {ItemService} from "../../services/item.service";
 
 @Component({
   selector: 'app-item-grid',
@@ -8,7 +9,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class ItemGridComponent implements OnInit {
 
-  constructor() { }
+  private readonly = this.itemService
+  constructor(private itemService: ItemService) { }
 
   ngOnInit(): void {
   }
