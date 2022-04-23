@@ -21,7 +21,7 @@ export class ItemService {
         name: 'Tree',
         description: 'simple but effective!',
         co2Reduction: 1,
-        quantity: 20000000000,
+        quantity: 200,
         costFunction: (quantity: number) => quantity * 1.5 + 1,
         incomePerSecond: 95.45,
         thumbnail: '/assets/tree.png'
@@ -30,7 +30,7 @@ export class ItemService {
         name: 'Solar panel',
         description: 'prise the sun!',
         co2Reduction: 3,
-        quantity: 0,
+        quantity: 100,
         costFunction: (quantity: number) => quantity * 2 + 3.2,
         incomePerSecond: 175.48,
         thumbnail: '/assets/solar-panel.png'
@@ -66,7 +66,7 @@ export class ItemService {
         name: 'Nuclear power plant',
         description: 'atom power!',
         co2Reduction: 99.99,
-        quantity: 0,
+        quantity: 10,
         costFunction: (quantity: number) => quantity * 6 + 10.3,
         incomePerSecond: 999.99,
         thumbnail: '/assets/nuclear-power-plant.png'

@@ -1,0 +1,37 @@
+:host {
+  display: block;
+
+  .button {
+    cursor: pointer;
+    transition: ease-in-out 0.4s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      text-align: center;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      padding: 10px;
+    }
+
+    .text {
+      padding: 10px;
+      color: white;
+      background: #21D672;
+      text-align: center;
+      font-size: 32px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+
+}

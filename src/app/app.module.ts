@@ -16,8 +16,10 @@ import { ProgressComponent } from './components/progress/progress.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { ShoppingMultiplierComponent } from './components/shopping-multiplier/shopping-multiplier.component';
 import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-balance.component";
+import {GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule} from "@abacritt/angularx-social-login";
 import { GameComponent } from './components/game/game.component';
 import { LoginComponent } from './components/login/login.component';
+import {LoginButtonComponent} from "./components/login-button/login-button.component";
 import {RealTreesComponent} from "./components/real-trees/real-trees.component";
 
 @NgModule({
@@ -37,14 +39,27 @@ import {RealTreesComponent} from "./components/real-trees/real-trees.component";
     ShoppingComponent,
     ShoppingMultiplierComponent,
     GameComponent,
+    RealTreesComponent,
     LoginComponent,
-    RealTreesComponent
+    LoginButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [{
+    provide: 'SocialAuthServiceConfig',
+    useValue: {
+      autoLogin: false,
+      providers: [
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider('932018242921-uiap5uvn856i9b61bntcptbbcvonhl35.apps.googleusercontent.com'),
+        },
+      ],
+    } as SocialAuthServiceConfig,
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
