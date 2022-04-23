@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import {Component, OnInit, ChangeDetectionStrategy, OnDestroy} from '@angular/core';
+import {BalanceService} from "../../services/balance.service";
 
 @Component({
   selector: 'app-game',
@@ -6,11 +7,16 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./game.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GameComponent implements OnInit {
+export class GameComponent implements OnInit, OnDestroy {
 
-  constructor() { }
+  constructor(private balanceService: BalanceService) { }
 
   ngOnInit(): void {
+    this.balanceService.startCounting()
+  }
+
+  ngOnDestroy(): void {
+    this.balanceService.stopCounting()
   }
 
 }

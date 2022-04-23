@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {BehaviorSubject, last} from "rxjs";
-import {setInterval} from "timers";
 import {StateService} from "./state.service";
 import {MultiplierService} from "./multiplier.service";
 import {ItemService} from "./item.service";
@@ -29,7 +28,7 @@ export class BalanceService {
 
   startCounting() {
     this.stopCounting()
-    this.gameIntervalId = setInterval(this.increaseMoney, 1000 / BalanceService.GAME_TICK_PER_SECOND)
+    this.gameIntervalId = setInterval(() => this.increaseMoney(), 1000 / BalanceService.GAME_TICK_PER_SECOND)
   }
 
   stopCounting() {
@@ -40,6 +39,7 @@ export class BalanceService {
   }
 
   increaseMoney() {
+    console.log(this.stateService.incomePerSecond)
     this.balance += this.stateService.incomePerSecond / BalanceService.GAME_TICK_PER_SECOND
   }
 

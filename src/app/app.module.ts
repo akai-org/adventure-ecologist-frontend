@@ -18,6 +18,7 @@ import { ShoppingMultiplierComponent } from './components/shopping-multiplier/sh
 import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-balance.component";
 import { GameComponent } from './components/game/game.component';
 import { LoginComponent } from './components/login/login.component';
+import {RealTreesComponent} from "./components/real-trees/real-trees.component";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LoginComponent } from './components/login/login.component';
     ShoppingComponent,
     ShoppingMultiplierComponent,
     GameComponent,
-    LoginComponent
+    LoginComponent,
+    RealTreesComponent
   ],
   imports: [
     BrowserModule,

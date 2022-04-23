@@ -1,1 +1,5 @@
-<p>progress works!</p>
+<section *ngIf="(totalCO2EmissionReduction$ | async) != null ">
+  <app-progress-bar [progress]="calculateProgress((totalCO2EmissionReduction$ | async) || 0, 4)"></app-progress-bar>
+  <h4>{{calculateProgress((totalCO2EmissionReduction$ | async) || 0, 0)}}% of Carbon waste reduced!</h4>
+  <p>Reach to 100% to plant   <span style="font-weight: bold">a real tree!</span> </p>
+</section>

@@ -21,7 +21,7 @@ export class ItemService {
         name: 'Tree',
         description: 'simple but effective!',
         co2Reduction: 1,
-        quantity: 0,
+        quantity: 20000000000,
         costFunction: (quantity: number) => quantity * 1.5 + 1,
         incomePerSecond: 95.45,
         thumbnail: 'path/to/thumbnail/tree.png'
