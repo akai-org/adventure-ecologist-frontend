@@ -16,6 +16,8 @@ import { ProgressComponent } from './components/progress/progress.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { ShoppingMultiplierComponent } from './components/shopping-multiplier/shopping-multiplier.component';
 import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-balance.component";
+import { GameComponent } from './components/game/game.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-b
     ProgressComponent,
     ShoppingBalanceComponent,
     ShoppingComponent,
-    ShoppingMultiplierComponent
+    ShoppingMultiplierComponent,
+    GameComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
