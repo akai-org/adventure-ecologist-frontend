@@ -3,6 +3,7 @@ export class ApiResponse {
   email!: string;
   balance!: number;
   multiplier!: number;
+  totalIncomePerSecond!: number;
   lastLogin!: string;
   treeCount!: number;
   solarPanelCount!: number;
