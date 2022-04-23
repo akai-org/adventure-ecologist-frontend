@@ -1,3 +1,56 @@
 :host {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+
+  div.egg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+
+    background-color: #00A684;
+    border-radius: 80px 50px;
+    box-shadow: 5px 5px 0 #00D9AC;
+    position: absolute;
+    z-index: -1;
+    left: 10px;
+  }
+
+  div.trees-amount {
+    width: 430px;
+
+  }
+
+  div.trees-amount-number {
+    z-index: -1;
+    position: relative;
+    // left: -30px;
+
+    color: white;
+    font-weight: bold;
+    background-color: #00A684;
+    box-shadow: 20px 0 0 #00D9AC;
+
+    font-size: 38px;
+    border-radius: 30px 20px;
+  }
+
+  div.trees-amount-title {
+    font-size: 24px;
+  }
+
+  .bold {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .light {
+    color: #fff;
+    font-weight: 300;
+  }
+
 }
