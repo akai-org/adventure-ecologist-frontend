@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import {BehaviorSubject} from "rxjs";
-import {ItemService} from "./item.service";
-import {Item} from "../models/item";
-import {MultiplierService} from "./multiplier.service";
+import { BehaviorSubject } from "rxjs";
+import { Item } from "../models/item";
+import { ItemService } from "./item.service";
+import { MultiplierService } from "./multiplier.service";
 
 @Injectable({
   providedIn: 'root'

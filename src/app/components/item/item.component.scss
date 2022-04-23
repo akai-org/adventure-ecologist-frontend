@@ -1,3 +1,109 @@
 :host {
-  display: block;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #21D672;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+
+    img {
+      width: 100px;
+    }
+
+    .quantity {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: -20px;
+      width: 60px;
+      background: #21D672;
+      border-radius: 80px;
+      padding: 5px 20px;
+      box-shadow: 0 -5px 0 #3FC27C;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+
+    }
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+
+    .background {
+      padding-right: 50px;
+      margin-left: -50px;
+      background: #008267;
+      box-shadow: 0 5px 0 #53AD24;
+
+      .info {
+        display: flex;
+        margin-left: 60px;
+        color: #fff;
+        padding: .5rem 0;
+        font-size: 14px;
+
+        .title {
+          font-weight: 500;
+          color: #ABFF00;
+        }
+
+        .bold {
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .second {
+          font-size: 16px;
+          color: #00D9AC;
+        }
+
+        & > div {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  .buy-btn {
+    cursor: pointer;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 23px;
+    width: 100px;
+    height: 100px;
+    padding-top: 1rem;
+    background: #ABFF00;
+    border-radius: 50%;
+    margin-left: -45px;
+    box-shadow: 5px 5px 0 #53AD24;
+
+    .cost {
+      font-size: 18px;
+      font-weight: bold;
+      color: #008267;
+    }
+
+    .buy {
+      font-size: 24px;
+      font-weight: bold;
+      color: #004E44;
+    }
+
+    .multiplier {
+      font-size: 14px;
+      font-weight: bold;
+      color: #53AD24;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import {BehaviorSubject, Subject} from "rxjs";
-import {Item} from "../models/item";
-import {ApiResponse} from "../models/api-response";
+import { BehaviorSubject } from "rxjs";
+import { ApiResponse } from "../models/api-response";
+import { Item } from "../models/item";
 
 @Injectable({
   providedIn: 'root'
@@ -24,7 +24,7 @@ export class ItemService {
         quantity: 20000000000,
         costFunction: (quantity: number) => quantity * 1.5 + 1,
         incomePerSecond: 95.45,
-        thumbnail: 'path/to/thumbnail/tree.png'
+        thumbnail: '/assets/tree.png'
       },
       {
         name: 'Solar panel',
@@ -33,7 +33,7 @@ export class ItemService {
         quantity: 0,
         costFunction: (quantity: number) => quantity * 2 + 3.2,
         incomePerSecond: 175.48,
-        thumbnail: 'path/to/thumbnail/solar-panel.png'
+        thumbnail: '/assets/solar-panel.png'
       },
       {
         name: 'Bicycle path',
@@ -42,7 +42,7 @@ export class ItemService {
         quantity: 0,
         costFunction: (quantity: number) => quantity * 3 + 4.7,
         incomePerSecond: 325.25,
-        thumbnail: 'path/to/thumbnail/bicycle-path.png'
+        thumbnail: '/assets/bicycle-path.png'
       },
       {
         name: 'Second hand',
@@ -51,7 +51,7 @@ export class ItemService {
         quantity: 0,
         costFunction: (quantity: number) => quantity * 4 + 5.4,
         incomePerSecond: 615.22,
-        thumbnail: 'path/to/thumbnail/second-hand.png'
+        thumbnail: '/assets/second-hand.png'
       },
       {
         name: 'Vege bar',
@@ -60,7 +60,7 @@ export class ItemService {
         quantity: 0,
         costFunction: (quantity: number) => quantity * 4.8 + 7.1,
         incomePerSecond: 789.99,
-        thumbnail: 'path/to/thumbnail/vege-bar.png'
+        thumbnail: '/assets/vege-bar.png'
       },
       {
         name: 'Nuclear power plant',
@@ -69,7 +69,7 @@ export class ItemService {
         quantity: 0,
         costFunction: (quantity: number) => quantity * 6 + 10.3,
         incomePerSecond: 999.99,
-        thumbnail: 'path/to/thumbnail/nuclear-power-plant.png'
+        thumbnail: '/assets/nuclear-power-plant.png'
       }
     ]
   }
