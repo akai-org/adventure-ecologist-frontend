@@ -8,6 +8,6 @@
     Spend it wisely!
   </div>
   <div class="trees-amount-number">
-    <span style="color: #ABFF00;">$</span> {{ balance$ | async }}
+    <span style="color: #ABFF00;">$</span> {{ (balance$ | async)?.toFixed(2) }}
   </div>
 </div>

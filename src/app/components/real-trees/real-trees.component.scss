@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 30px;
+  z-index: 1000;
 }
 
 div.egg{
@@ -40,4 +41,5 @@ div.trees-amount-number {
 div.trees-amount-title {
   font-size: 24px;
   text-align: center;
+  color: white;
 }
