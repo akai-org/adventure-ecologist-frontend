@@ -16,8 +16,10 @@ import { ProgressComponent } from './components/progress/progress.component';
 import { ShoppingComponent } from './components/shopping/shopping.component';
 import { ShoppingMultiplierComponent } from './components/shopping-multiplier/shopping-multiplier.component';
 import {ShoppingBalanceComponent} from "./components/shopping-balance/shopping-balance.component";
+import {GoogleLoginProvider, SocialAuthServiceConfig, SocialLoginModule} from "@abacritt/angularx-social-login";
 import { GameComponent } from './components/game/game.component';
 import { LoginComponent } from './components/login/login.component';
+import {LoginButtonComponent} from "./components/login-button/login-button.component";
 
 @NgModule({
   declarations: [
@@ -36,13 +38,26 @@ import { LoginComponent } from './components/login/login.component';
     ShoppingComponent,
     ShoppingMultiplierComponent,
     GameComponent,
-    LoginComponent
+    LoginComponent,
+    LoginButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SocialLoginModule
   ],
-  providers: [],
+  providers: [{
+    provide: 'SocialAuthServiceConfig',
+    useValue: {
+      autoLogin: false,
+      providers: [
+        {
+          id: GoogleLoginProvider.PROVIDER_ID,
+          provider: new GoogleLoginProvider('932018242921-uiap5uvn856i9b61bntcptbbcvonhl35.apps.googleusercontent.com'),
+        },
+      ],
+    } as SocialAuthServiceConfig,
+  },],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

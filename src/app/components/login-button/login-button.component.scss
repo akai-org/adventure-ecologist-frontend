@@ -1,0 +1,27 @@
+:host {
+  display: block;
+
+  .button {
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+
+    .icon {
+      background: white;
+      text-align: center;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+
+    .text {
+      color: white;
+      background: #21D672;
+      text-align: center;
+      font-size: 32px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+
+}
